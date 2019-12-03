@@ -1,0 +1,6 @@
+:toc:
+:icons: font
+:source-highlighter: prettify
+:project_id: draft-gs-multi-module
+
+This is some Java snippets and ideas I want to explore

@@ -1,0 +1,11 @@
+:icons: font
+:source-highlighter: prettify
+:project_id: simple app in docker
+
+Simple SpringBoot app in Docker
+
+`mvn install dockerfile:build`
+
+`docker run -p8080:8080 bits/application:latest`
+
+http://localhost:8080/[http://localhost:8080/]
