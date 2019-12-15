@@ -2,10 +2,13 @@
 :source-highlighter: prettify
 :project_id: simple app in docker
 
-Simple SpringBoot app in Docker
+Simple SpringBoot app in Docker. Show multi-module application `application` and `library` dependency
+
+### Run from the `application` directory:
 
 `mvn install dockerfile:build`
 
+### Docker run
 `docker run -p8080:8080 bits/application:latest`
 
 http://localhost:8080/[http://localhost:8080/]
