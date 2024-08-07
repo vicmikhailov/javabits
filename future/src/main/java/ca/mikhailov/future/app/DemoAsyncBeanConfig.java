@@ -14,6 +14,7 @@ public class DemoAsyncBeanConfig implements AsyncConfigurer {
 
   /**
    * This bean has the asyc methods
+   *
    * @return MyAsyncBean
    */
   @Bean
@@ -23,6 +24,7 @@ public class DemoAsyncBeanConfig implements AsyncConfigurer {
 
   /**
    * Custorm Executor
+   *
    * @return Executor
    */
   @Bean("executor1")
@@ -38,6 +40,7 @@ public class DemoAsyncBeanConfig implements AsyncConfigurer {
 
   /**
    * Custom exception handler
+   *
    * @return AsyncUncaughtExceptionHandler
    */
   @Override

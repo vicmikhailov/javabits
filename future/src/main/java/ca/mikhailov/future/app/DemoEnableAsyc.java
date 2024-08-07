@@ -2,6 +2,7 @@ package ca.mikhailov.future.app;
 
 import static java.lang.System.exit;
 
+import java.util.stream.IntStream;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -27,9 +28,7 @@ public class DemoEnableAsyc {
     return x -> {
       System.out.println("Runner starts....");
 
-      for (int i = 0; i < 10; i++) {
-        asyncBean.runTask();
-      }
+      IntStream.range(0, 10).forEach(i -> asyncBean.runTask());
 
       Thread.sleep(20000);
       exit(0);
