@@ -47,5 +47,4 @@ public class DemoAsyncBeanConfig implements AsyncConfigurer {
   public AsyncUncaughtExceptionHandler getAsyncUncaughtExceptionHandler() {
     return new DemoAsyncUncaughtExceptionHandler();
   }
-
 }

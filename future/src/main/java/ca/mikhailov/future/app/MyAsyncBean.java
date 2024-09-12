@@ -7,7 +7,7 @@ public class MyAsyncBean {
   @Async("executor1")
   public void runTask() {
     String name = Thread.currentThread().getName();
-    System.out.printf("Running task  thread: %s\n", name);
+    System.out.printf("Running task thread: %s\n", name);
 
     if ("FutureExecutor-7".equals(name)) {
       throw new RuntimeException("Holy molly");
