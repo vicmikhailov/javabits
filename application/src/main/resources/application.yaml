@@ -1,0 +1,3 @@
+service:
+  message: ${SERVICE_MESSAGE:Hello World}
+

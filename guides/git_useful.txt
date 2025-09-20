@@ -1,0 +1,8 @@
+###
+
+git config --global user.name "Victor Mikhailov"
+git config --global user.email "victor@mikhailov.ca"
+git config --global pull.rebase true
+git config --global rerere.enabled true
+git config --global push.default simple
+git config --global core.editor "vi"

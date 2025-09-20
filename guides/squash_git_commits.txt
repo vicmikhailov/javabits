@@ -1,0 +1,15 @@
+### clean up your git history
+# 1) Ensure you're on master and up-to-date
+git checkout master
+git fetch origin
+git reset --hard origin/master
+
+# 2) Make a safety backup branch
+git branch backup/pre-squash-$(date +%Y%m%d)
+
+# 3) Create a single new root commit from the current tree
+newroot=$(git commit-tree HEAD^{tree} -m "Squashed history")
+git reset --hard "$newroot"
+
+# 4) Force-push the rewritten history
+git push --force-with-lease origin master

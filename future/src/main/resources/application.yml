@@ -1,0 +1,6 @@
+future:
+  executor:
+    core-pool-size: 7
+    max-pool-size: 42
+    queue-capacity: 11
+    thread-name-prefix: "FutureExecutor-"
